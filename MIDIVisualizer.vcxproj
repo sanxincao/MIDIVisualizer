@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F6DD60FB-C5DD-45B5-8DA0-626FE0210ACB}</ProjectGuid>
     <RootNamespace>GL_Template</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -104,8 +104,8 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glfw3.lib;comctl32.lib;nfd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>src\libs\nfd\lib-win-vc2017-64\;src\libs\glfw\lib-win-vc2015-64\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;glfw3.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;comctl32.lib;nfd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>src\libs\nfd\lib-win-vc2017-64\;C:\Users\16396\source\repos\MIDIVisualizer\src\libs\glfw\lib-win-x64;src\libs\glfw\lib-win-vc2015-64\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -166,10 +166,10 @@
     <ClCompile Include="src\rendering\Renderer.cpp" />
     <ClCompile Include="src\rendering\ScreenQuad.cpp" />
     <ClCompile Include="src\rendering\State.cpp" />
-    <ClCompile Include="src\ressources\flash_image.cpp" />
-    <ClCompile Include="src\ressources\font_image.cpp" />
-    <ClCompile Include="src\ressources\particles_image.cpp" />
-    <ClCompile Include="src\ressources\shaders.cpp" />
+    <ClCompile Include="src\resources\flash_image.cpp" />
+    <ClCompile Include="src\resources\font_image.cpp" />
+    <ClCompile Include="src\resources\particles_image.cpp" />
+    <ClCompile Include="src\resources\shaders.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\helpers\MeshUtilities.h" />
@@ -196,7 +196,7 @@
     <ClInclude Include="src\rendering\Renderer.h" />
     <ClInclude Include="src\rendering\ScreenQuad.h" />
     <ClInclude Include="src\rendering\State.h" />
-    <ClInclude Include="src\ressources\data.h" />
+    <ClInclude Include="src\resources\data.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\shaders\gbuffer\ambient.frag" />
